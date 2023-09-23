@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RockPaperScissorsGame</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-
-  <body>
-    <h1 style="text-align: center;">RockPaperScissorsGame</h1>
-    <p style="text-align: center;">Choose your move:</p>
-    <div class="buttons">
-        <button id="rock">&#x1F44A;</button>
-        <button id="paper">&#x1f590;</button>
-        <button id="scissor">&#x270c;</button>       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Rock-Paper-Scissor/style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="game">
+        <div class="options">
+            <button class="btn" id="rock">&#x1F44A;</button>
+            <button class="btn" id="paper">&#x1f590;</button>
+            <button class="btn" id="scissors">&#x270c;</button>
+            
+            <div class="result">
+                <p id="round-result">Choose an option above</p>
+            </div>
+        
+        </div>
+        
     </div>
-    <p id="result"></p>
-    <p id="scores">
-        Your score:<span id="user-score">0</span>
-        <br>
-        Computer score:<span id="computer-score">0</span>
-    </p>
-    <script src="/index.js"></script>
-  </body>
+    
+<div class="leaderboard">
+  <h2>Leaderboard</h2>
+  <ul id="leaderboard-list">
+      <!-- Winners will be displayed here -->
+  </ul>
+</div>
+<div class="game-state">
+    <h2>Game State</h2>
+  <div>
+      <p><span>🤴</span>Player Score: <span id="player-score">0</span> <span id="player-trophy">🏆</span></p>
+  </div>
+  <div>
+    <p><span>💻</span>Computer Score: <span id="computer-score">0</span> <span id="computer-trophy">🏆</span></p>
+  </div>
+</div>
 
+
+    <script src="/Rock-Paper-Scissor/index.js"></script>
+</body>
 </html>
